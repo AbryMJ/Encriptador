@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet" href="styles_encriptador_vf.css">
+    <script type="text/javascript" src="index_encriptador_vf.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="logo">
+            <img class="logoImg" src="Imagenes/Logo_Alura.png">
+            
+        </div>
+
+        <div class="left">
+
+            <textarea name="texto" class="texto" id="inputTexto" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+            
+        </div>
+
+        <div class="right">
+
+            <textarea name="name" id="textoSecundario" cols="30" rows="10">El texto encriptado se mostrará aquí</textarea>
+            <img src="Imagenes/Munheco_300px.png" id="imgDer">
+            <h1 id="textoPrincipal">Ningún mensaje encriptado</h1>
+            <p id="callToAction">El texto encriptado se mostrará en esta ventana</p>
+            <button id="copiar" type="button" name="button" onclick="copy()">Copiar</button>
+             
+        </div>
+
+
+        <div class="left-button">
+            <ul class="terminos">
+               <li> <img src="Imagenes/Warning.png"> </li>
+               <li> Sólo letras minúsculas y sin acentos </li>
+            </ul>
+            <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+            <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
